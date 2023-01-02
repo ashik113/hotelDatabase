@@ -137,6 +137,7 @@
 
 if ($conn->query($sql) === TRUE) {
   header("location:display.php");
+  echo "Inserted Successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
